@@ -1,0 +1,8 @@
+{
+  "name": "vector",
+  "description": "Simple math vector library",
+  "authors": [ "sigmasoldi3r" ],
+  "files": {
+    "vector.lua": "init.lua"
+  }
+}
