@@ -22,6 +22,7 @@
 -----
 local class, operator
 do
+  local github = require 'github'
   local pandora = github.require 'pandora'
   class = pandora.class
   operator = pandora.operator
