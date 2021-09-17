@@ -20,8 +20,13 @@
 -----
 -- Math utilities for vector calculus.
 -----
-local github = require 'github'
-local class, operator = github.import 'pandora' { 'class', 'operator' }
+local class, operator
+do
+  local import = require 'github'
+  local pandora = import 'f9KMrd36'
+  class = pandora.class
+  operator = pandora.operator
+end
 
 local function badVectorArithmeticError(other)
   error('Cannot do vector arithmetic on ' .. type(other))
